@@ -70,3 +70,143 @@
     --outline: rgb(104, 60, 65);
     --bubble: rgb(48, 20, 26);
 }
+
+html, body {
+    background-color: var(--bg);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+ul.nav {
+    list-style-type: none;
+    padding: 0em;
+    overflow: hidden;
+    background-color: var(--nav);
+    border: solid 0.2em var(--outline);
+    border-radius: 0.5em;
+    user-select: none;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+ul.nav li a {
+    display: flex;
+    list-style-type: none;
+    padding: 0.5em;
+    font-size: 1.25em;
+    background-color: var(--nav);
+    color: var(--text);
+    user-select: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul.nav li select {
+    display: flex;
+    list-style-type: none;
+    padding: 0.5em;
+    font-size: 1.25em;
+    background-color: var(--nav);
+    color: var(--text);
+    border: none;
+    font-weight: bold;
+    font-family: serif;
+}
+
+ul.nav li select option {
+    display: flex;
+    list-style-type: none;
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: var(--nav);
+    color: var(--text);
+    font-weight: bold;
+    font-family: serif;
+}
+
+h1  {
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 1.5em;
+    color: var(--text);
+    user-select: none;
+    font-weight: bold;
+}
+
+#content h1 {
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 1.5em;
+    color: var(--text);
+    user-select: none;
+    font-weight: bold;
+}
+    
+p {
+    padding: 0.1em;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 1.25em;
+    color: var(--text);
+    user-select: none;
+} 
+
+#sidebar {
+    float: left;
+    padding: 0.4em;
+    text-align: left;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 1.25em;
+    border: solid 0.18em var(--outline);
+    border-radius:0.5em;
+    color: var(--text);
+    user-select: none;
+    overflow-y: auto;
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 18%;
+    background-color: var(--bubble);
+    height: 81%;
+}
+
+#content {
+    padding: 0.4em;
+    text-align: left;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 1.25em;
+    border: solid 0.18em var(--outline);
+    border-radius:0.5em;
+    color: var(--text);
+    user-select: none;
+    overflow-y: auto;
+    margin-right: 40%;
+    margin-left: 0%;
+    background-color: var(--bubble);
+    height: 81%;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
